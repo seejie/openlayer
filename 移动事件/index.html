@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Moveend Event</title>
+    <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
+    <script src="https://unpkg.com/elm-pep"></script>
+    <style>
+      .map {
+        width: 100%;
+        height:400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <label>left: <input readonly="readonly" type="text" id="left"></label>
+    <label>right: <input readonly="readonly" type="text" id="right"></label>
+    <label>bottom: <input readonly="readonly" type="text" id="bottom"></label>
+    <label>top: <input readonly="readonly" type="text" id="top"></label>
+    <script src="main.js"></script>
+  </body>
+</html>

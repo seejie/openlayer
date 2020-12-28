@@ -9,7 +9,6 @@ import {shiftKeyOnly} from 'ol/events/condition';
 
 var vectorSource = new VectorSource({
   url: 'https://openlayers.org/en/latest/examples/data/geojson/countries.geojson',
-  // url: '../data/countries.geojson.json',
   format: new GeoJSON(),
 });
 

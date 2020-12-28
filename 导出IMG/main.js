@@ -12,7 +12,6 @@ var map = new Map({
     }),
     new VectorLayer({
       source: new VectorSource({
-        // url: 'data/geojson/countries.geojson',
         url: 'https://openlayers.org/en/latest/examples/data/geojson/countries.geojson',
         format: new GeoJSON(),
       }),

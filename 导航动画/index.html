@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Marker Animation</title>
+    <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
+    <script src="https://unpkg.com/elm-pep"></script>
+    <style>
+      .map {
+        width: 100%;
+        height:400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <label for="speed">
+      speed:&nbsp;
+      <input id="speed" type="range" min="10" max="999" step="10" value="60">
+    </label>
+    <button id="start-animation">Start Animation</button>
+    <script src="main.js"></script>
+  </body>
+</html>

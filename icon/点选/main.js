@@ -24,7 +24,6 @@ function createStyle(src, img) {
 var iconFeature = new Feature(new Point([0, 0]));
 iconFeature.set('style', 
   createStyle(
-    // 'data/icon.png', 
     'https://openlayers.org/en/latest/examples/data/icon.png', 
     undefined
   )

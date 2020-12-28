@@ -21,7 +21,6 @@ var iconStyle = new Style({
     anchor: [0.5, 46],
     anchorXUnits: 'fraction',
     anchorYUnits: 'pixels',
-    // src: 'data/icon.png',
     src: 'https://openlayers.org/en/latest/examples/data/icon.png',
   }),
 });

@@ -56,11 +56,29 @@
     "spy": "parcel ./透视镜/index.html",
     "layer-swipe": "parcel ./图层变脸/index.html",
     "image-load-events": "parcel ./图像加载事件/index.html",
+    "edit-geographic": "parcel ./边框编辑/index.html",
+    "select": "parcel ./交互选择/index.html",
+    "timezones": "parcel ./时区/index.html",
+    "street-labels": "parcel ./街道标签/index.html",
+    "style-renderer": "parcel ./样式渲染器/index.html",
+    "sea-level": "parcel ./海平面/index.html",
+    "hover": "parcel ./悬停选择/index.html",
+    "osm-vector-tiles": "parcel ./矢量图块/index.html",
+    "route-animation": "parcel ./导航动画/index.html",
+    "shaded-relief": "parcel ./阴影/index.html",
+    "select-multiple": "parcel ./多选/index.html",
+    "view-multiple": "parcel ./双视图共享/index.html",
+    "tile-events": "parcel ./瓦片图事件/index.html",
+    "measure": "parcel ./测量/index.html",
+    "mouse-position": "parcel ./鼠标监听/index.html",
+    "moveend": "parcel ./移动事件/index.html",
+    "scaleline": "parcel ./比例尺/index.html",
     "aaa": "echo hi"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ol": "^6.5.0"
+    "ol": "^6.5.0",
+    "proj4": "^2.6.3"
   }
 }

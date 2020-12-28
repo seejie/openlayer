@@ -152,7 +152,7 @@ var map = new Map({
           anchorXUnits: 'fraction',
           anchorYUnits: 'pixels',
           opacity: 0.95,
-          src: 'data/icon.png',
+          src: 'https://openlayers.org/en/latest/examples/data/icon.png',
         }),
         stroke: new Stroke({
           width: 3,
