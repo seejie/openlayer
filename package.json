@@ -1,0 +1,33 @@
+{
+  "name": "openlayer",
+  "version": "1.0.0",
+  "description": "examples",
+  "main": "index.js",
+  "scripts": {
+    "cluster-distance": "parcel ./聚类距离/index.html",
+    "raster-color": "parcel ./栅格色彩/index.html",
+    "tileLayer": "parcel ./瓦片图/index.html",
+    "custom-controls": "parcel ./自定义控件/index.html",
+    "custom-interactions": "parcel ./自定义交互/index.html",
+    "custom-class": "parcel ./自定义类/index.html",
+    "gif": "parcel ./gif动画/index.html",
+    "circle": "parcel ./圆形/index.html",
+    "area-selection": "parcel ./区域选择/index.html",
+    "bing": "parcel ./必应地图/index.html",
+    "draw": "parcel ./绘图/index.html",
+    "draw2": "parcel ./绘图2/index.html",
+    "draw3": "parcel ./绘图3/index.html",
+    "drag-rotate-zoom": "parcel ./拖拽旋转缩放/index.html",
+    "attributions": "parcel ./属性折叠/index.html",
+    "orientation": "parcel ./设备方向/index.html",
+    "d3": "parcel ./d3/index.html",
+    "polygon": "parcel ./多边形/index.html",
+    "overviewmap": "parcel ./总览图/index.html",
+    "aaa": "echo hi"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ol": "^6.5.0"
+  }
+}

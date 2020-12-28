@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Color Manipulation</title>
+    <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
+    <script src="https://unpkg.com/elm-pep"></script>
+    <style>
+      .map {
+        width: 100%;
+        height:400px;
+      }
+      table.controls td {
+        padding: 2px 5px;
+      }
+      table.controls td:nth-child(3) {
+        text-align: right;
+        min-width: 4.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <table class="controls">
+      <tr>
+        <td><label for="hue">hue</label></td>
+        <td><input id="hue" type="range" min="-180" max="180" value="0"/></td>
+        <td><span id="hueOut"></span> °&nbsp;</td>
+      </tr>
+      <tr>
+        <td><label for="chroma">chroma</label></td>
+        <td><input id="chroma" type="range" min="0" max="100" value="100"/></td>
+        <td><span id="chromaOut"></span> %</td>
+      </tr>
+      <tr>
+        <td><label for="lightness">lightness</label></td>
+        <td><input id="lightness" type="range" min="0" max="100" value="100"/></td>
+        <td><span id="lightnessOut"></span> %</td>
+      </tr>
+    </table>
+    <script src="main.js"></script>
+  </body>
+</html>
