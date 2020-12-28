@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>WebGL points layer</title>
+    <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
+    <script src="https://unpkg.com/elm-pep"></script>
+    <style>
+      .map {
+        width: 100%;
+        height:400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    Choose a predefined style from the list below or edit it as JSON manually.
+    <select id="style-select">
+      <option value="icons">Icons</option>
+      <option value="triangles">Triangles, color related to population</option>
+      <option value="triangles-latitude">Triangles, color related to latitude</option>
+      <option value="circles">Circles, size related to population</option>
+      <option value="circles-zoom">Circles, size related to zoom</option>
+      <option value="rotating-bars">Rotating bars</option>
+    </select>
+    <textarea style="width: 100%; height: 20rem; font-family: monospace; font-size: small;" id="style-editor"></textarea>
+    <small>
+      <span id="style-valid" style="display: none; color: forestgreen">✓ style is valid</span>
+      <span id="style-invalid" style="display: none; color: grey">✗ <span>style not yet valid...</span></span>
+      &nbsp;
+    </small>
+    <script src="main.js"></script>
+  </body>
+</html>
