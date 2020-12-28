@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Filtering features with WebGL</title>
+    <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
+    <script src="https://unpkg.com/elm-pep"></script>
+    <style>
+      .map {
+        width: 100%;
+        height:400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <form>
+      <div id="status">Show impacts between <span class="min-year"></span> and <span class="max-year"></span></div>
+
+      <label for="min-year">Minimum year:</label>
+      <input id="min-year" type="range" min="1850" max="2015" step="1" value="1850"/>
+      <label for="max-year">Maximum year:</label>
+      <input id="max-year" type="range" min="1850" max="2015" step="1" value="2015"/>
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>

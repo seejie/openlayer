@@ -4,6 +4,7 @@ import Map from 'ol/Map';
 import TileLayer from 'ol/layer/Tile';
 import View from 'ol/View';
 
+// https://openlayers.org/en/latest/examples/bing-maps.html
 var styles = [
   'RoadOnDemand',
   'Aerial',

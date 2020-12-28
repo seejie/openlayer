@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Layer Z-Index</title>
+    <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
+    <script src="https://unpkg.com/elm-pep"></script>
+    <style>
+      .map {
+        width: 100%;
+        height:400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <div>
+      <label for="idx1">
+        <input type="number" id="idx1"></input>
+        Square layer Z-index
+      </label></br>
+
+      <label for="idx2">
+        <input type="number" id="idx2"></input>
+        Triangle layer Z-index
+      </label>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

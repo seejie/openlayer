@@ -134,17 +134,12 @@ var polygonFeature = new Feature(
       [-3e6, -1e6] ] ])
 );
 
-var key =
-  'Your Mapbox access token from https://mapbox.com/ here';
-
 var map = new Map({
   interactions: defaultInteractions().extend([new Drag()]),
   layers: [
     new TileLayer({
       source: new TileJSON({
-        url:
-          'https://a.tiles.mapbox.com/v4/aj.1x1-degrees.json?secure&access_token=' +
-          key,
+        url: '/aj.1x1-degrees.json'
       }),
     }),
     new VectorLayer({

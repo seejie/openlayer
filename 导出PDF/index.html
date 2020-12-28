@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Export PDF example</title>
+    <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
+    <script src="https://unpkg.com/elm-pep"></script>
+    <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+    <script src="https://cdn.polyfill.io/v3/polyfill.min.js?features=fetch,requestAnimationFrame,Element.prototype.classList,URL,TextDecoder"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <style>
+      .map {
+        width: 100%;
+        height:400px;
+      }
+      .map {
+        max-width: 566px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row-fluid">
+      <div class="span12">
+        <div id="map" class="map"></div>
+      </div>
+    </div>
+    <form class="form">
+      <label for="format">Page size </label>
+      <select id="format">
+        <option value="a0">A0 (slow)</option>
+        <option value="a1">A1</option>
+        <option value="a2">A2</option>
+        <option value="a3">A3</option>
+        <option value="a4" selected>A4</option>
+        <option value="a5">A5 (fast)</option>
+      </select>
+      <label for="resolution">Resolution </label>
+      <select id="resolution">
+        <option value="72">72 dpi (fast)</option>
+        <option value="150">150 dpi</option>
+        <option value="300">300 dpi (slow)</option>
+      </select>
+    </form>
+    <button id="export-pdf">Export PDF</button>
+    <script src="main.js"></script>
+  </body>
+</html>

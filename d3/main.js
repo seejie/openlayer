@@ -91,7 +91,8 @@ var map = new Map({
 /**
  * Load the topojson data and create an ol/layer/Image for that data.
  */
-d3.json('data/topojson/us.json').then(function (us) {
+// d3.json('data/us.json').then(function (us) {
+d3.json('https://openlayers.org/en/latest/examples/data/topojson/us.json').then(function (us) {
   var layer = new CanvasLayer({
     features: topojson.feature(us, us.objects.counties),
   });

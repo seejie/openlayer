@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Image Load Events</title>
+    <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
+    <script src="https://unpkg.com/elm-pep"></script>
+    <style>
+      .map {
+        width: 100%;
+        height:400px;
+      }
+      .map {
+        background: #E0ECED;
+      }
+      .wrapper {
+        position: relative;
+      }
+      #progress {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        background: rgba(0, 60, 136, 0.4);
+        width: 0;
+        transition: width 250ms;
+      }    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="map" class="map"></div>
+      <div id="progress"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
