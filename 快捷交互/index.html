@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Snap Interaction</title>
+    <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
+    <script src="https://unpkg.com/elm-pep"></script>
+    <style>
+      .map {
+        width: 100%;
+        height:400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <form id="options-form" autocomplete="off">
+      <div class="radio">
+        <label>
+          <input type="radio" name="interaction" value="draw" id="draw" checked>
+          Draw &nbsp;
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="interaction" value="modify">
+          Modify &nbsp;
+        </label>
+      </div>
+      <div class="form-group">
+        <label for="draw-type">Draw type &nbsp;</label>
+        <select name="draw-type" id="draw-type">
+          <option value="Point">Point</option>
+          <option value="LineString">LineString</option>
+          <option value="Polygon">Polygon</option>
+          <option value="Circle">Circle</option>
+        </select>
+      </div>
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>

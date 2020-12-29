@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Smoothing lines using Chaikins algorithm</title>
+    <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
+    <script src="https://unpkg.com/elm-pep"></script>
+    <style>
+      .map {
+        width: 100%;
+        height:400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <form class="form-inline">
+      <label for="shall-smoothen">Smooth drawn geometry?</label>
+      <input id="shall-smoothen" type="checkbox" checked><br>
+      <label for="iterations">Number of smoothings</label>
+      <input style="width: 250px;" type="range" id="iterations" min="2" max="10" step="1" value="5">
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>
