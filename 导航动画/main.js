@@ -16,6 +16,7 @@ import {
 import {Tile as TileLayer, Vector as VectorLayer} from 'ol/layer';
 import {getVectorContext} from 'ol/render';
 
+// https://openlayers.org/en/latest/examples/feature-move-animation.html
 var key = 'get_your_own_D6rA4zTHduk6KOKTXzGB';
 var attributions =
   '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> ' +

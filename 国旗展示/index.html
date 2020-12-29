@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>UTFGrid</title>
+    <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
+    <script src="https://unpkg.com/elm-pep"></script>
+    <style>
+      .map {
+        width: 100%;
+        height:400px;
+      }
+      #country-name {
+        color: black;
+        font-size: 12pt;
+        font-weight: bold;
+        text-shadow: white 0.1em 0.1em 0.2em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <div style="display: none;">
+      <!-- Overlay with the country info -->
+      <div id="country-info">
+        <div id="country-name">&nbsp;</div>
+        <img id="country-flag" src="" />
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

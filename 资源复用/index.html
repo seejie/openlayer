@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Reusable Source</title>
+    <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
+    <script src="https://unpkg.com/elm-pep"></script>
+    <style>
+      .map {
+        width: 100%;
+        height:400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <button class="switcher" value="0">January</button>
+    <button class="switcher" value="1">January (with bathymetry)</button>
+    <button class="switcher" value="2">July</button>
+    <button class="switcher" value="3">July (with bathymetry)</button>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -5,6 +5,7 @@ import View from 'ol/View';
 import {Circle as CircleStyle, Fill, Stroke, Style} from 'ol/style';
 import {OSM, Vector as VectorSource} from 'ol/source';
 import {Tile as TileLayer, Vector as VectorLayer} from 'ol/layer';
+import {fromLonLat} from 'ol/proj';
 
 /** @type {VectorSource<import("../src/ol/geom/SimpleGeometry.js").default>} */
 var source = new VectorSource({
@@ -35,8 +36,9 @@ var vectorLayer = new VectorLayer({
   style: style,
 });
 var view = new View({
-  center: [0, 0],
-  zoom: 1,
+  center: fromLonLat([6.6339863, 46.5193823]),
+  padding: [170, 50, 30, 150],
+  zoom: 6,
 });
 var map = new Map({
   layers: [
@@ -54,18 +56,7 @@ zoomtoswitzerland.addEventListener(
   function () {
     var feature = source.getFeatures()[0];
     var polygon = feature.getGeometry();
-    view.fit(polygon, {padding: [170, 50, 30, 150]});
-  },
-  false
-);
-
-var zoomtolausanne = document.getElementById('zoomtolausanne');
-zoomtolausanne.addEventListener(
-  'click',
-  function () {
-    var feature = source.getFeatures()[1];
-    var point = feature.getGeometry();
-    view.fit(point, {padding: [170, 50, 30, 150], minResolution: 50});
+    view.fit(polygon);
   },
   false
 );
@@ -76,8 +67,7 @@ centerlausanne.addEventListener(
   function () {
     var feature = source.getFeatures()[1];
     var point = feature.getGeometry();
-    var size = map.getSize();
-    view.centerOn(point.getCoordinates(), size, [570, 500]);
+    view.setCenter(point.getCoordinates());
   },
   false
 );

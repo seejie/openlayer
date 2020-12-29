@@ -7,7 +7,8 @@ import View from 'ol/View';
 import {Fill, Stroke, Style} from 'ol/style';
 import {fromLonLat} from 'ol/proj';
 
-var key = 'get_your_own_D6rA4zTHduk6KOKTXzGB';
+// https://openlayers.org/en/latest/examples/osm-vector-tiles.html
+var key = '';
 
 var roadStyleCache = {};
 var roadColor = {
